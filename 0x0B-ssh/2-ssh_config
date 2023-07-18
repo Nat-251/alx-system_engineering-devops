@@ -1,4 +1,8 @@
-Host 35.231.178.39
-     User Ubuntu
-     IdentityFile /home/vagrant/.ssh/holberton/id_rsa
-     PasswordAuthentication no
+# Config file
+Host *
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
